@@ -35,7 +35,7 @@ public class InstagramTest {
     @Test
     public void testGetMediaByUrl() throws IOException, InstagramException {
         Instagram instagram = new Instagram();
-        Media media = instagram.getMediaByUrl("https://www.instagram.com/p/BHaRdodBouH");
+        Media media = instagram.getMediaByUrl("http://localhost:8010/p/BHaRdodBouH");
         assertEquals("kevin", media.owner.username);
     }
     
